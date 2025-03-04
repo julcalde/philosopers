@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:57 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 14:16:33 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 14:18:11 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	main(int argc, char **argv)
 	else
 	{
 		perror_exit("Invalid input\nCorrect input example:\n\
-./philo 5 800 200 200 3");
+./philo 5 800 200 200 [3]");
 	}
 	return (0);
 }
