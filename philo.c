@@ -6,39 +6,30 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:57 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 14:56:54 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:14:03 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-/*
-	valid input ex. 5 800 200 200 [3]
-	num of philos
-	time to die
-	time to eat
-	time to sleep
-	limit of meals [optional]
-*/
-
 /* MAIN SHOULD
-	1. check for correct num of inputs
-	2. if so, check for correct inputs and parse them
-	3. if so, initialize the input for structs
-	4. if so, start the simulation until a philo dies or limit of meals is reached
-	5. at the end, clean up and exit
+DONE check for correct num of inputs
+DONE if so, check for correct inputs and parse them
+TODO if so, initialize the input for structs
+TODO if so, start the simulation until a philo dies or limit of meals is reached
+TODO at the end, clean up and exit
 */
 int	main(int argc, char **argv)
 {
+	t_input	*input;
+
 	if (argc == 5 || argc == 6)
 	{
-		
+		parse_input(input, argv);
 	}
 	else
-	{
 		perror_exit("Invalid input\nCorrect input example:\n\
 ./philo 5 800 200 200 [3]");
-	}
 	return (0);
 }
 

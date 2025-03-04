@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:52 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 14:46:47 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:16:18 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,15 +46,15 @@ typedef struct s_philo
 
 typedef struct s_input
 {
-	long	num_of_philos; //argv[1]
-	long	time_to_die; //argv[2]
-	long	time_to_eat; //argv[3]
-	long	time_to_sleep; //argv[4]
-	long	num_of_meals; //argv[5] ()== -1 if no limit)
-	long	time_start; //gettimeofday for timestamps
-	long	time_end; //getttimeofday for death or limit if meal reached
-	t_fork	*forks; //array of fork mutexes
-	t_philo	*philos; //array of philo threads
+	long	num_of_philos;
+	long	time_to_die;
+	long	time_to_eat;
+	long	time_to_sleep;
+	long	must_eat;
+	long	time_start;
+	long	time_end;
+	t_fork	*forks;
+	t_philo	*philos;
 }			t_input;
 
 /*
@@ -63,5 +63,7 @@ typedef struct s_input
 //	utils.c
 void	perror_exit(const char *err_msg);
 
+// parsing.c
+void	parse_input(t_input *input, char **argv);
 
 #endif
