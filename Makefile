@@ -18,7 +18,7 @@ CYAN = \033[36m
 NC = \033[0m
 CLEAR_LINE = \033[2K\r
 
-SRCS =			philo.c
+SRCS =			philo.c utils.c
 
 # Object files
 OBJS := $(addprefix $(OBJ_DIR)/, $(SRCS:%.c=%.o))

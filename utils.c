@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo.h                                            :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/27 15:02:52 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 14:11:14 by julcalde         ###   ########.fr       */
+/*   Created: 2025/03/04 14:05:52 by julcalde          #+#    #+#             */
+/*   Updated: 2025/03/04 14:08:54 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHILO_H
-# define PHILO_H
+#include "philo.h"
 
-# include <pthread.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <sys/time.h>
-# include <stdbool.h>
-# include <limits.h>
-
-//	utils.c
-void	perror_exit(const char *err_msg);
-
-
-#endif
+void	perror_exit(const char *err_msg)
+{
+	write (2, "Error: ", 7);
+	printf("%s\n", err_msg);
+	exit (1);
+}

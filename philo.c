@@ -6,16 +6,36 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:57 by julcalde          #+#    #+#             */
-/*   Updated: 2025/02/27 15:42:17 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 14:16:33 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+/*
+	valid input ex. 5 800 200 200 [3]
+	num of philos
+	time to die
+	time to eat
+	time to sleep
+	optional limit of meals
+*/
+
 int	main(int argc, char **argv)
 {
+	if (argc == 5 || argc == 6)
+	{
+		printf("nice caulc\n");
+	}
+	else
+	{
+		perror_exit("Invalid input\nCorrect input example:\n\
+./philo 5 800 200 200 3");
+	}
 	return (0);
-} /* Philosophers with threads and mutexes
+}
+
+/* Philosophers with threads and mutexes
 	Program name:		philo
 	Turn in files:		Makefile, *.h, *.c, in directory philo/
 	Makefile:			NAME, all, clean, fclean, re
