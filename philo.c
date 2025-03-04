@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:57 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 14:18:11 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 14:56:54 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,21 @@
 	time to die
 	time to eat
 	time to sleep
-	optional limit of meals
+	limit of meals [optional]
 */
 
+/* MAIN SHOULD
+	1. check for correct num of inputs
+	2. if so, check for correct inputs and parse them
+	3. if so, initialize the input for structs
+	4. if so, start the simulation until a philo dies or limit of meals is reached
+	5. at the end, clean up and exit
+*/
 int	main(int argc, char **argv)
 {
 	if (argc == 5 || argc == 6)
 	{
-		printf("nice caulc\n");
+		
 	}
 	else
 	{
