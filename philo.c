@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:57 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 16:14:03 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:22:41 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	main(int argc, char **argv)
 {
 	t_input	*input;
 
+	input = NULL;
 	if (argc == 5 || argc == 6)
 	{
 		parse_input(input, argv);

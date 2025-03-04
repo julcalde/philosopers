@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 15:09:18 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 16:10:57 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:28:22 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ static const char	*valid_input(const char *str)
 	int			len;
 	const char	*num;
 
+	num = NULL;
+	len = 0;
 	while (is_space(*str))
 		++str;
 	if (*str == '+')
@@ -76,7 +78,6 @@ static long	ft_atol(const char *str)
 		perror_exit("Value is bigger than 2147483647\n");
 	return (num);
 }
-
 
 void	parse_input(t_input *input, char **argv)
 {

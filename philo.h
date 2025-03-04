@@ -6,7 +6,7 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:02:52 by julcalde          #+#    #+#             */
-/*   Updated: 2025/03/04 16:16:18 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:22:07 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@
 	STRUCTURES
 */
 typedef pthread_mutex_t	t_mutex;
+
+typedef struct s_input	t_input;
 
 typedef struct s_fork
 {
